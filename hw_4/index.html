@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+          display: flex;  
+          flex-direction: column;  
+          gap: 15px;
+        }
+        span {
+          width: 130px;
+          float: left;
+        }
+        form span {
+          width: 110px;
+          display: block;
+        }
+        form label {
+          display: flex;
+          gap:30px
+        }
+        form button {
+          width: 160px; 
+        }
+        .gender {
+          display: flex;
+        }
+        .checkbox {
+          display: flex;
+        }
+        
+    </style>
+</head>
+<body>
+  <form action="#" method="post" name="contact">
+    <label><span>Повне ім'я</span>
+      <input type="text" name="name" required placeholder="*"/>
+    </label>
+    <label><span>Email</span>
+        <input type="email" name="email" required placeholder="*"/>
+      </label>
+      <label><span>Пароль</span>
+        <input type="password" name="password" required placeholder="*"/>
+      </label>
+      <label><span>Пароль ще раз</span>
+        <input type="password" name="password" required placeholder="*"/>
+      </label>
+      <div>
+        <label><span>Стать</span>
+        <div class="gender">
+          <input type="radio" name="sex" required placeholder="1"/>
+          <label><span>чоловіча</span></label>
+          <input type="radio" name="sex" required placeholder="1"/>
+          <label><span>жіноча</span></label>
+      </label>
+      </div>
+    </div> 
+      <label><span>Вік</span>
+        <input type="number" name="age" required placeholder="*"/>
+      </label>
+      <label><span>Курс</span>
+        <select>
+            <option>Front-End</option>
+            <option>Back-End</option>
+            <option>Project Management</option>
+            <option>QA Manual</option>
+        </select>
+      </label>
+      <label><span>Повна адреса</span>
+       <textarea required></textarea>
+      </label>
+    </label>
+    <label>
+    <div>
+      <div class="checkbox">
+       <input type="checkbox" name="mark"> 
+       <p>Я погоджуюсь з обробкою персональних даних</p>
+      </div>
+      </label>
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Зареєструватися</button>
+    </div>
+  </form> 
+</body>
+</html>
