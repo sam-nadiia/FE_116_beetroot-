@@ -75,6 +75,10 @@ br {
     font-weight: 400;
     line-height: normal; 
 }
+.portfolio .items {
+    display: flex;
+    flex-direction: column;
+}
 .items {
     display: flex;
     align-items: center;
