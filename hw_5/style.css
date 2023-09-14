@@ -32,13 +32,18 @@ a {
 .container-about {
     background:#F6F6F6;
     height: 500px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills {
     max-width: 970px;
     margin: 0 auto;
     padding: 100px 0 101px 0;
-}     
+}    
 h1 {
     color:#070707;
     font-family: Open Sans;
@@ -74,6 +79,9 @@ br {
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
+}
+.portfolio h2 {
+    margin: 100px 0 50px 0;
 }
 .portfolio .items {
     display: flex;
